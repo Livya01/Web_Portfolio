@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" >
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Livya</title>
+
+    <script>
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('js');
+    </script>
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+    <link rel="icon" type="image/favicons" sizes="32x32" href="favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+</head>
+
+
+<body id="top">
+
+    
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-fade">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- page wrap
+    ================================================== -->
+    <div id="page" class="s-pagewrap">
+
+
+        <!-- # site header 
+        ================================================== -->
+        <header class="s-header">
+            <div class="row s-header__inner">
+
+                <div class="s-header__block">
+                    <div class="s-header__logo">
+                       <a class="logo" href="index.html">Livya</a>
+
+                    </div>
+
+                    <a class="s-header__menu-toggle" href="#0"><span>Menu</span></a>
+                </div> <!-- end s-header__block -->
+
+                <nav class="s-header__nav">    
+                    <ul class="s-header__menu-links">
+                        <li class="current"><a class="smoothscroll" href="#intro">Intro</a></li>
+                        <li><a class="smoothscroll" href="#about">About</a></li>
+                        <li><a class="smoothscroll" href="#services">Services</a></li>
+                        <li><a class="smoothscroll" href="#projects">Projects</a></li>
+                        <li><a class="smoothscroll" href="#footer">Contact</a></li>
+                    </ul> <!-- s-header__menu-links -->    
+                </nav> <!-- end s-header__nav -->
+
+            </div> <!-- end s-header__inner -->
+        </header> <!-- end s-header -->
+
+        <style>
+            .logo {
+    color: white;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif; /* You can replace with any font you prefer */
+    font-size: 24px; /* Optional: adjust size */
+    text-decoration: none; /* Remove underline if needed */
+}
+
+        </style>
+
+        <!-- # intro
+        ================================================== -->
+        <section id="intro" class="s-intro target-section">
+
+            <div class="row s-intro__content width-sixteen-col">
+                <div class="column lg-12 s-intro__content-inner grid-block grid-16">
+                    
+                    <div class="s-intro__content-text">
+
+                        <div class="s-intro__content-pretitle text-pretitle">Hello</div>
+                        <h1 class="s-intro__content-title">
+                        I'm Livya <br>
+                        Web Developer <br>
+                        base in Somewhere.
+                        </h1>                            
+
+                        <div class="s-intro__content-btns">
+                            <a class="smoothscroll btn" href="#about">More About Me</a>
+                            <a class="smoothscroll btn btn--stroke" href="#footer">Get In Touch</a>
+                        </div> <!-- s-intro__content-btns -->   
+
+                    </div> <!-- s-intro__content-text -->                     
+                    
+                </div> <!-- s-intro__content-inner -->  
+            </div> <!-- s-intro__content -->
+
+            <ul class="s-intro__social social-list">
+              <li>
+    <a href="tel:+9025761459"> <!-- Add your phone number here -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.62 10.79a15.053 15.053 0 0 0 6.59 6.59l2.2-2.2a1.003 1.003 0 0 1 1.01-.24c1.12.37 2.33.57 3.59.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C9.39 21 3 14.61 3 6c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.26.2 2.47.57 3.59.09.31.02.64-.24.9l-2.2 2.2z"/>
+        </svg>
+        <span class="u-screen-reader-text">Call</span>
+    </a>
+</li>
+
+                <li>
+    <a href="https://wa.me/919025761459" target="_blank">
+        <!-- WhatsApp SVG -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 448 512" style="fill:rgba(0, 0, 0, 1);">
+            <path d="M380.9 97.1C339 55.2 283.2 32 224.4 32 104.2 32 7.5 135.5 7.5 255.8c0 44.7 11.6 88.2 33.6 126.6L0 480l101.7-26.5c36.1 19.8 76.5 30.4 118 30.4h.1c120.3 0 216.9-103.5 216.9-223.8 0-59.1-23-114.8-65-156.9zm-156.5 336c-35.4 0-70.2-9.5-100.4-27.6l-7.2-4.3-60.3 15.7 16-58.6-4.7-7.6c-20.9-33.6-31.9-72.3-31.9-112.5 0-110 90.3-199.5 200.8-199.5 53.6 0 103.9 20.8 141.7 58.6s59.3 87.9 59.3 141.3c0 110.1-89.7 194.9-198.3 194.9zm106.4-138.2c-5.8-2.9-34.5-17-39.9-18.9-5.3-2-9.2-2.9-13.1 2.9-3.9 5.8-15 18.9-18.4 22.8-3.4 3.9-6.8 4.4-12.6 1.5-5.8-2.9-24.5-9-46.6-28.9-17.2-15.3-28.8-34.2-32.2-39.9-3.3-5.8-.4-8.9 2.5-11.8 2.6-2.6 5.8-6.8 8.7-10.2 2.9-3.4 3.9-5.8 5.8-9.7 1.9-3.9 1-7.3-.5-10.2-1.5-2.9-13.1-31.5-18-43.2-4.7-11.3-9.5-9.8-13.1-10-3.4-.2-7.3-.2-11.2-.2s-10.2 1.5-15.5 7.3c-5.3 5.8-20.2 19.7-20.2 48.1s20.7 55.8 23.6 59.6c2.9 3.9 40.8 62.2 99 87.3 13.8 5.9 24.6 9.4 33.1 12 13.9 4.4 26.5 3.8 36.5 2.3 11.1-1.7 34.5-14.1 39.3-27.7 4.8-13.6 4.8-25.2 3.4-27.7-1.4-2.5-5.2-3.9-11-6.8z"/>
+        </svg>
+        <span class="u-screen-reader-text">WhatsApp</span>
+    </a>
+</li>
+
+               <li>
+    <a href="mailto:livyakannan@gmail.com">
+        <!-- Email SVG icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:rgba(0, 0, 0, 1);">
+            <path d="M20 4H4C2.897 4 2 4.897 2 6v12c0 1.103.897 2 2 2h16c1.104 0 2-.897 2-2V6c0-1.103-.896-2-2-2zm0 2v.511l-8 5.012-8-5.012V6h16zM4 18V8.489l7.445 4.652a1 1 0 0 0 1.11 0L20 8.489V18H4z"/>
+        </svg>
+        <span class="u-screen-reader-text">Email</span>
+    </a>
+</li>
+            </ul> <!-- end s-intro__social -->
+
+            <div class="s-intro__content-media">                               
+                <img src="images/bg3.png" srcset="images/intro-bg.jpg 1x, images/bg3.png 2x" alt="">
+            </div> <!-- s-intro__content-media -->                
+
+            <div class="s-intro__btn-download">
+                <a class="btn btn--stroke" href="Livya_Kannan.pdf" target="_blank" download>Get My Resume</a>
+
+            </div> <!-- end s-intro__btn-download -->
+            
+            <div class="s-intro__scroll-down">
+                <a href="#about" class="smoothscroll">
+                    <div class="scroll-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M11.178 19.569a.998.998 0 0 0 1.644 0l9-13A.999.999 0 0 0 21 5H3a1.002 1.002 0 0 0-.822 1.569l9 13z"></path></svg>
+                    </div>
+                    <span class="scroll-text u-screen-reader-text">Scroll Down</span>
+                </a>
+            </div> <!-- s-intro__scroll-down -->
+
+        </section> <!-- end s-intro -->
+
+
+        <!-- # about
+        ================================================== -->
+        <section id="about" class="s-about target-section">
+
+            <div class="row s-about__content">
+                <div class="column xl-12">    
+                    
+                    <div class="section-header" data-num="01">
+                        <h2 class="text-display-title">About Me.</h2>
+                    </div> <!-- end section-header -->
+
+                    <p class="attention-getter">
+                   Hi, I'm Livya Kannan, a passionate and detail-oriented web developer with 1.5+ years of hands-on experience 
+                   in building dynamic, responsive, and user-centric web applications. I hold a Bachelor's degree in Computer
+                    Science and Engineering and have developed various real-time projects across different domains.
+                    </p>
+
+                    <p class="attention-getter">
+                    I specialize in a diverse set of technologies such as HTML, CSS, JavaScript, Bootstrap, PHP, Laravel, Node.js,
+                     and MySQL. In addition, I have strong expertise in WordPress development, particularly with WooCommerce,
+                      enabling me to create robust, scalable, and feature-rich E-Commerce websites tailored to business needs.
+                    </p>
+
+                     <p class="attention-getter">
+                   I have a solid understanding of both standalone and collaborative development environments, and I’m 
+                   skilled at turning client requirements into working digital solutions that are secure, scalable, and visually
+                    engaging.
+                    </p>
+
+                    <div class="grid-list-items s-about__blocks">
+
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Experience</h4>
+                            <ul class="s-about__list">
+                                <li>
+                                    Coding Website
+                                    
+                                </li>
+                                <li>
+                                   WordPress Website
+                            
+                                </li>
+                                <li>
+                                    E-Commerce Website
+                                    
+                                </li>
+                                <li>
+                                    WooCommerce Website
+                                    
+                                </li>
+                                <li>
+                                    Admin Panel
+                                </li>
+                            </ul>
+                        </div> <!--end s-about__block -->
+
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Tech Skills I Apply</h4>
+
+                            <ul class="s-about__list">
+                                <li>
+                                    <a href="#0">
+                                        Frontend
+                                        <span>HTML, CSS, JavaScript, Bootstrap</span>
+                                    </a>                                        
+                                </li>
+                                <li>
+                                    <a href="#0">
+                                        Backend
+                                        <span>PHP, Laravel, Node.js</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#0">
+                                        CMS
+                                        <span>WordPress, WooCommerce, E-Commerce</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#0">
+                                       Database
+                                        <span>MySQL</span>
+                                    </a>
+                                </li><li>
+                                    <a href="#0">
+                                        Others
+                                        <span>GitHub</span>
+                                    </a>                                        
+                                </li>
+                            </ul>
+                        </div> <!--end s-about__block -->
+                        
+                        <div class="grid-list-items__item s-about__block">
+                            <h4 class="s-about__block-title">Skills</h4>
+
+                            <ul class="s-about__list">
+                                <li>
+                                    HTML, CSS, JavaScript
+                                </li>
+                                <li>
+                                    Laravel
+                                </li>
+                                <li>
+                                    Bootstrap
+                                </li>
+                          
+                                <li>
+                                    PHP
+                                </li>
+                                <li>
+                                    Node.Js
+                                </li>
+                                <li>
+                                   MySQL
+                                </li>
+                            </ul>
+                        </div> <!--end s-about__block -->
+
+                    </div> <!-- grid-list-items -->
+
+                </div> <!--end column -->
+            </div> <!--end s-about__content -->
+            
+        </section> <!-- end s-about -->   
+
+
+<!-- Services Section -->
+<section id="services" class="s-services target-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>My Services That Deliver Design, Code, and Clarity</h2>
+    </div>
+
+    <div class="services-grid">
+      <!-- Service Card -->
+      <div class="service-card">
+        <div class="icon"><i class="fas fa-code"></i></div>
+        <h3>Website Development</h3>
+        <p>Custom websites built with modern technology tailored to your business needs.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon"><i class="fas fa-desktop"></i></div>
+       <h3>WordPress Development</h3>
+<p>Building dynamic and easily manageable websites using WordPress CMS.</p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+        <h3>E-Commerce Development</h3>
+<p>Creating powerful online stores with secure payment gateways and user-friendly interfaces.</p>
+
+      </div>
+       <div class="service-card">
+        <div class="icon"><i class="fas fa-database"></i></div>
+        <h3>WooCommerce Development</h3>
+<p>Building feature-rich online stores using WooCommerce with custom functionality & secure checkout.</p>
+      </div>
+
+       <div class="service-card">
+        <div class="icon"><i class="fas fa-chart-line"></i></div>
+       <h3>Admin Panel</h3>
+<p>Powerful and user-friendly admin panels to manage content, users, orders, and other key functionalities.</p>
+      </div>
+
+       <div class="service-card">
+        <div class="icon"><i class="fas fa-image"></i></div>
+        <h3>Banner Design</h3>
+        <p>Creative banner ads and promotional graphics for online platforms.</p>
+      </div>
+
+       <div class="service-card">
+        <div class="icon"><i class="fas fa-paint-brush"></i></div>
+        <h3>Poster Design</h3>
+<p>Creative and eye-catching poster designs tailored to your brand.</p>
+
+      </div>
+
+      <div class="service-card">
+        <div class="icon"><i class="fas fa-bullhorn"></i></div>
+        <h3>Basic SEO</h3>
+<p>Optimize your website’s structure and content to improve visibility.</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+
+
+/* Font Awesome */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+
+
+.services-section {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header .subheading {
+  color: #0000;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  margin: 10px 0;
+  color: #222;
+}
+
+.section-header p {
+  color: #666;
+  font-size: 15px;
+}
+
+/* Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+/* Service Card */
+.service-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.service-card .icon {
+  background-color: #000; /* black background */
+  color: #fff;            /* white icon */
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  transition: background 0.3s;
+}
+
+.service-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+</style>
+        
+
+<style>
+.image-container {
+    perspective: 1000px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.image-container img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    transform: rotateY(0deg);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+.image-container:hover img {
+    transform: rotateY(5deg) scale(1.05);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+}
+
+
+</style>
+
+    <!-- Projects -->
+       <section id="projects" class="s-project target-section">
+    <div id="projects" class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="h2-heading">Delivered projects</h2>
+                    <p class="p-heading">Listed below are some of the most representative projects I've worked on. They range from basic web design for presentation sites to advanced web development for online shops</p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://electronics.nooryak.com/public/" target="_blank">
+                                <img class="img-fluid" src="images/electronics.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                       
+                    </div> <!-- end of text-container -->
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://ssvrdesigners.com/">
+                                <img class="img-fluid" src="images/14.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                       
+                    </div> <!-- end of text-container -->
+
+                     <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://traveltimetaxi.com/" target="_blank">
+                                <img class="img-fluid" src="images/3.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                      
+                    </div> <!-- end of text-container -->
+
+                     <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://furnitures.nooryak.com/public/" target="_blank">
+                                <img class="img-fluid" src="images/2.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                       
+                    </div> <!-- end of text-container -->
+
+                     <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://eight2nine.com/" target="_blank">
+                                <img class="img-fluid" src="images/6.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                       
+                    </div> <!-- end of text-container -->
+
+                     <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://womenart.in/public/" target="_blank">
+                                <img class="img-fluid" src="images/7.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                    
+                    </div> <!-- end of text-container -->
+                     <div class="text-container">
+                        <div class="image-container">
+                            <a href="#">
+                                <img class="img-fluid" src="images/20.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+    
+                    </div> <!-- end of text-container -->
+
+                     <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://studiodomainarchitects.in/" target="_blank">
+                                <img class="img-fluid" src="images/15.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                       
+                    </div> <!-- end of text-container -->
+
+                     <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://thefathersgifts.com/" target="_blank">
+                                <img class="img-fluid" src="images/5.png" alt="alternative">
+                            </a>
+                       
+                    </div> <!-- end of text-container -->
+
+                     <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://electronics.nooryak.com/public/admin/" target="_blank">
+                                <img class="img-fluid" src="images/23.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                       
+                    </div> <!-- end of text-container -->
+
+                     <div class="text-container">
+                        <div class="image-container">
+                            <a href="#">
+                                <img class="img-fluid" src="images/19.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        
+                    </div> <!-- end of text-container -->
+
+                     <div class="text-container">
+                        <div class="image-container">
+                            <a href="#">
+                                <img class="img-fluid" src="images/18.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        
+                    </div> <!-- end of text-container -->
+
+                     <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://samedumedicaluniversity.com/" target="_blank">
+                                <img class="img-fluid" src="images/4.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                       
+                    </div> <!-- end of text-container -->
+
+                     <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://globalelectricals.in/" target="_blank">
+                                <img class="img-fluid" src="images/13.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                       
+                    </div> <!-- end of text-container -->
+
+                     <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://www.crystal-technologies.in/" target="_blank">
+                                <img class="img-fluid" src="images/9.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                      
+                    </div> <!-- end of text-container -->
+
+                         <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://vinayagadentalclinic.com/" target="_blank">
+                                <img class="img-fluid" src="images/10.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                        
+                    </div> <!-- end of text-container -->
+
+    
+
+
+     <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://pavanpipes.com/" target="_blank">
+                                <img class="img-fluid" src="images/8.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                       
+                    </div> <!-- end of text-container -->
+
+
+     <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://everestpromoters.com/" target="_blank">
+                                <img class="img-fluid" src="images/21.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                       
+                    </div> <!-- end of text-container -->
+                   
+                         <div class="text-container">
+                        <div class="image-container">
+                            <a href="http://brindavanamhomestay.com/" target="_blank">
+                                <img class="img-fluid" src="images/22.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                       
+                    </div> <!-- end of text-container -->
+
+
+                    
+                         <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://krishnasawmill.com/" target="_blank">
+                                <img class="img-fluid" src="images/11.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                     
+                    </div> <!-- end of text-container -->
+
+
+
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://fmbuilders.site/" target="_blank">
+                                <img class="img-fluid" src="images/17.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                       
+                    </div> <!-- end of text-container -->
+                    <div class="text-container">
+                        <div class="image-container">
+                            <a href="https://alfurniture.in/" target="_blank">
+                                <img class="img-fluid" src="images/12.png" alt="alternative">
+                            </a>
+                        </div> <!-- end of image-container -->
+                       
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of projects -->
+
+
+        <!-- # numbers
+        ================================================== -->
+        <section id="numbers" class="s-numbers">
+
+            <div class="row counter-items">
+
+                <div class="column counter-items__item">
+                    <div class="num">
+                        25
+                        <span>+</span>
+                    </div>
+                    <h5>Projects Completed</h5>
+                    <p>
+                    Successfully delivered a diverse range of web development, design, and digital 
+                    solutions tailored to client needs. 
+                    </p>
+                </div> <!-- end counter-items__item -->
+
+                <div class="column counter-items__item">
+                    <div class="num">
+                        1.5
+                        <span>+</span>
+                    </div>
+                    <h5>Years of Experience</h5>
+                    <p>
+                   I’ve worked with a variety of clients across different industries, delivering 
+                   tailored digital solutions that drive results and enhance user experiences.
+                    </p>
+                </div> <!-- end counter-items__item -->
+
+              <!-- end counter-items__item -->
+
+             <!-- end counter-items__item -->
+
+            </div>  <!-- end counter-items -->
+
+        </section> <!-- end s-numbers -->
+
+
+        <!-- # footer 
+        ================================================== -->
+        <footer id="footer" class="s-footer target-section">
+
+            <div class="row">
+                <div class="column lg-12">
+                    <div class="section-header light-on-dark" data-num="03">
+                        <h2 class="text-display-title">Get In Touch.</h2>
+                    </div> <!-- end section-header -->
+                </div>
+            </div>
+
+            <div class="row s-footer__content">
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__about">                    
+                    <p class="attention-getter">
+                    If you have a project in mind or just want to say hello, feel free to contact me.
+                    </p>               
+                </div> <!-- end section-footer__about -->
+
+                <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
+                    <div class="row">
+                        <div class="column xl-4 lg-5 md-6 tab-12">
+                            <h5>Follow Me</h5>
+                            <ul class="link-list">
+                                <li><a href="tel:+9025761459" target="_blank">Phone</a></li>
+                                <li><a href="https://wa.me/919025761459" target="_blank">Whatsapp</a></li>
+                                <li><a href="mailto:livyakannan@gmail.com" target="_blank">Mail</a></li>
+                            </ul>
+                        </div>
+                        <div class="column xl-6 md-6 tab-12">
+                            <h5>Contact Me</h5>
+                            <ul class="link-list">
+                                <li><a href="mailto:livyakannan@gmail.com" target="_blank">livyakannan@gmail.com</a></li>
+                                <li><a href="tel:+9025761459" target="_blank">+91 9025761459</a></li>
+                            </ul> 
+                        </div>
+                    </div>                    
+                </div> <!-- end section-footer__site-links -->
+
+            </div> <!-- end section-footer__content -->
+
+
+            <div class="row s-footer__buttons">
+               
+                <div class="column xl-6 tab-12">
+                    <a href="https://wa.me/919025761459" class="btn btn--primary btn--large u-fullwidth">Message Me</a>
+                </div>
+          
+                <div class="column xl-6 tab-12">                    
+                    <a href="Livya_Kannan.pdf" class="btn btn--stroke btn--large u-fullwidth" target="_blank" download>Get My Resume</a>
+
+                </div>
+            
+            </div> <!-- end section-footer__buttons -->              
+            
+   
+
+              <div class="column xl-6 lg-12 footer-bottom">
+    <div class="ss-copyright">
+        <p>&copy; 2025 Livya. All Rights Reserved.</p>
+        <span>Designed by Livya</span>
+    </div>
+</div>
+
+<style>
+    .footer-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+</style>
+
+            </div> <!-- end section-footer__bottom -->          
+
+            <div class="ss-go-top">
+                <a class="smoothscroll" title="Back to Top" href="#top">                 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: ;msFilter:;"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path></svg>
+                </a>                                
+                <span>Back To Top</span>   
+            </div> <!-- end ss-go-top -->
+            
+        </footer> <!-- end s-footer -->
+
+    </div> <!-- end page-wrap -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
